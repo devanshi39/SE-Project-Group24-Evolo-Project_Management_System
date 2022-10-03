@@ -1,1 +1,1 @@
-# SE-Project-Gorup24
+# SE-Project-Group24
