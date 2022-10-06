@@ -1,0 +1,351 @@
+.navbar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index:5;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    bottom:0;
+    left:0;
+    width:18vw;
+    padding-top: 5rem;
+    background-color:#4a4df7;
+    border-right: 1px solid black;
+}
+.sidebar-menu{
+    padding:2vw;
+    color: white;
+    line-height: 1.75rem;
+}
+.new_project_btn{
+    position: fixed;
+    bottom: 2vw;
+    width: 15vw;
+    left: 1.5vw;
+    padding: 15px 0;
+    border: 1px solid black;
+    background-color: whitesmoke;
+    color:black;
+    font-size: 1.5em;
+    font-style: bold;
+    box-shadow: 0px 5px 4px grey;
+    border-radius: 10px;
+}
+.new_project_btn:active{
+    transform: translateY(3px);
+    box-shadow:0px 2px 4px grey;
+    border: none;
+    border-radius: 10px;
+}
+.new_project_btn:focus{
+    border: none;
+    border-radius: 10px;
+}
+.new_project_btn:visited{
+    border: none;
+    border-radius: 10px;
+}
+.menu-head{
+    font-size:1.5rem;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    color:white;
+    text-decoration: underline;
+}
+#project_list a{
+    color:white;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+ul{
+    list-style-type:circle;
+}
+.content{
+    position:absolute;
+    padding:5rem 2rem;
+    top:0;
+    left:18vw;
+    bottom:0;
+    width:82vw;
+    color: black;
+    background-color:whitesmoke;
+}
+.project_name{
+    font-family:sans-serif;
+    font-size:40px;
+    display:inline;
+}
+.project_organization{
+    font-family: sans-serif;
+    font-size:30px;
+    display:inline;
+}
+.dash_header{
+    display: block;
+    margin-left: 30px;
+    margin-top:15px;
+}
+.dash_table{
+    margin-top:20px;
+    width: 75vw;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+}
+.dash_table td, .dash_table th,.dash_table table{
+    border-bottom: 1px solid black;
+}
+.dash_table td,.dash_table th{
+    padding:4px 6px;
+}
+.dash_button{
+    padding: 5px 10px;
+    border: 1px solid black;
+    border-radius: 50px;
+    margin:20px auto;
+}
+.dash_button:hover{
+    background-color: rgb(197, 196, 196);
+    transition: ease-in-out 0.5s;
+}
+.my_task_to_do{
+    background-color: #e7a8a8;
+}
+.my_task_completed{
+    background-color: #b0e4b0;
+}
+.my_task_in_verification{
+    background-color: rgb(219, 219, 173);
+}
+/*.my_task{
+    background-color: grey;
+}
+.to_do{
+    background-color: rgb(163, 96, 96);
+    margin-left: 5px;;
+}
+.in_verification{
+    background-color: rgb(224, 224, 107);
+}
+.verified{
+    background-color: rgb(122, 184, 122);
+}*/
+.dash_button{
+}
+.button_right{
+    float: right;
+    margin-right: 15vw;
+}
+.button_left{
+    float: left;
+    margin-left: 5vw;
+}
+.dash_table_header{
+    text-align: center;
+    font-size: 18px;
+}
+.dash_table_header th{
+    padding: 15px;
+}
+.descrip{
+    max-width:200px;
+    word-wrap:break-word
+}
+.dash_submit_button{
+    border-radius: 20px;
+}
+
+/*New Project Form*/
+#new_project_form{
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    z-index: 10;
+}  
+#close_project_form{
+    border: none;
+    background-color: rgba(0,0,0,0);
+    color: white;
+    position:fixed;
+    margin-left: 70vw;
+    margin-top:6vh;
+}
+#project_form{
+    background-color: white;
+    margin: 10vh 30vw;
+    width: 40vw;
+    height: 55vh;
+    padding: 20px;
+}
+
+/*New member Form*/
+#new_member_form{
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    z-index: 11;
+}  
+#close_member_form{
+    border: none;
+    background-color: rgba(0,0,0,0);
+    color: white;
+    position:fixed;
+    margin-left: 70vw;
+    margin-top:6vh;
+}
+#member_form{
+    background-color: white;
+    margin: 10vh 30vw;
+    width: 40vw;
+    height: 45vh;
+    padding: 20px;
+}
+
+/*New task Form*/
+#new_task_form{
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    z-index: 11;
+}  
+#close_task_form{
+    border: none;
+    background-color: rgba(0,0,0,0);
+    color: white;
+    position:fixed;
+    margin-left: 70vw;
+    margin-top:2vh;
+}
+#task_form{
+    background-color: white;
+    margin: 5vh 30vw;
+    width: 40vw;
+    height: 90vh;
+    padding: 20px;
+}
+
+/*New submit Form*/
+#new_submit_form{
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    z-index: 11;
+}  
+#close_submit_form{
+    border: none;
+    background-color: rgba(0,0,0,0);
+    color: white;
+    position:fixed;
+    margin-left: 70vw;
+    margin-top:6vh;
+}
+#submit_form{
+    background-color: white;
+    margin: 10vh 30vw;
+    width: 40vw;
+    height: 40vh;
+    padding: 20px;
+}
+
+/*New verify Form*/
+#new_verify_form{
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    z-index: 11;
+}  
+#close_verify_form{
+    border: none;
+    background-color: rgba(0,0,0,0);
+    color: white;
+    position:fixed;
+    margin-left: 70vw;
+    margin-top:6vh;
+}
+#verify_form{
+    background-color: white;
+    margin: 10vh 30vw;
+    width: 40vw;
+    height: 35vh;
+    padding: 20px;
+}
+#work_verification{
+    text-decoration: underline;
+}
+/*Remove member Form*/
+#remove_member_form{
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    z-index: 11;
+}  
+#close_remove_member_form{
+    border: none;
+    background-color: rgba(0,0,0,0);
+    color: white;
+    position:fixed;
+    margin-left: 70vw;
+    margin-top:6vh;
+}
+#r_member_form{
+    background-color: white;
+    margin: 10vh 30vw;
+    width: 40vw;
+    height: 40vh;
+    padding: 20px;
+}
+
+/*Delete task Form*/
+#delete_task_form{
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    z-index: 11;
+}  
+#close_delete_task_form{
+    border: none;
+    background-color: rgba(0,0,0,0);
+    color: white;
+    position:fixed;
+    margin-left: 70vw;
+    margin-top:6vh;
+}
+#d_task_form{
+    background-color: white;
+    margin: 10vh 30vw;
+    width: 40vw;
+    height: 40vh;
+    padding: 20px;
+}
