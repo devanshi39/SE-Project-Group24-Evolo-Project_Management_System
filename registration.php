@@ -33,4 +33,5 @@ else{
     "c"=>$contact
     ));
     header("Location:login.php");
+    return;
 }
