@@ -7,6 +7,11 @@
    cp .github/hooks/pre-commit .git/hooks
    cp .github/hooks/post-commit .git/hooks
    ```
+2. Make sure executable permissions are set for the above files
+   ```
+   cd .git/hooks
+   chmod 755 post-commit pre-commit
+   ```
 2. Do a commit!
 
 ## What do these hooks do
