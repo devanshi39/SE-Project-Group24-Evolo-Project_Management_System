@@ -4,3 +4,4 @@
 [![GitHub issues](https://img.shields.io/github/issues/devanshi39/SE-Project-Group24-Evolo-Project_Management_System)](https://github.com/devanshi39/SE-Project-Group24-Evolo-Project_Management_System/issues)
 [![GitHub stars](https://img.shields.io/github/stars/devanshi39/SE-Project-Group24-Evolo-Project_Management_System)](https://github.com/devanshi39/SE-Project-Group24-Evolo-Project_Management_System/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/devanshi39/SE-Project-Group24-Evolo-Project_Management_System)](https://github.com/devanshi39/SE-Project-Group24-Evolo-Project_Management_System/network)
+![https://img.shields.io/github/languages/code-size/devanshi39/SE-Project-Group24-Evolo-Project_Management_System](https://img.shields.io/github/languages/code-size/devanshi39/SE-Project-Group24-Evolo-Project_Management_System)
