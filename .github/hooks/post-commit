@@ -3,15 +3,22 @@
 import smtplib
 from email.mime.text import MIMEText
 from subprocess import check_output
+import json
+import io #python 2.7
 #SERVER = "localhost"
 
-gmail_user = 'segrp24@gmail.com'
-gmail_password = 'wykbrmxaduhjvhsa'
+CREDS = {}
+
+with io.open('creds.json','r',encoding='utf8') as credsFile:
+    CREDS = json.load(credsFile)
+
+user = CREDS['email']
+key = CREDS['key']
 
 # Get the git log --stat entry of the new commit
 log = check_output(['git', 'log', '-1', '--stat', 'HEAD'])
 
-FROM = gmail_user
+FROM = user
 
 TO = ['asrivas7@ncsu.edu','sbhatia6@ncsu.edu','ibanerj@ncsu.edu','dksavla@ncsu.edu','asinha6@ncsu.edu']
 
@@ -34,7 +41,7 @@ try:
     # server.quit()
     smtp_server = smtplib.SMTP_SSL('smtp.gmail.com', 465)
     smtp_server.ehlo()
-    smtp_server.login(gmail_user, gmail_password)
+    smtp_server.login(user, key)
     smtp_server.sendmail(FROM, TO, email_text)
     smtp_server.close()
     print ("Notification sent successfully!")
