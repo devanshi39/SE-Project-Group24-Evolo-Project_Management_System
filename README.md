@@ -5,8 +5,12 @@
 [![GitHub stars](https://img.shields.io/github/stars/devanshi39/SE-Project-Group24-Evolo-Project_Management_System)](https://github.com/devanshi39/SE-Project-Group24-Evolo-Project_Management_System/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/devanshi39/SE-Project-Group24-Evolo-Project_Management_System)](https://github.com/devanshi39/SE-Project-Group24-Evolo-Project_Management_System/network)
 ![https://img.shields.io/github/languages/code-size/devanshi39/SE-Project-Group24-Evolo-Project_Management_System](https://img.shields.io/github/languages/code-size/devanshi39/SE-Project-Group24-Evolo-Project_Management_System)
+![GitHub language count](https://img.shields.io/github/languages/count/devanshi39/SE-Project-Group24-Evolo-Project_Management_System)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/devanshi39/SE-Project-Group24-Evolo-Project_Management_System)
+
 
 # What is Evolo?
+
 
 # Tools and Technology Used
 Tools:
