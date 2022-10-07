@@ -15,29 +15,29 @@
 ## Tools and Technology Used
 Tools:
 
-    1. MAMP
+1. MAMP
 
-    MAMP is a free and open source software used to develop and run dynamic websites. MAMP is a one-click-solution for setting up your personal web server. MAMP installs a local server environment in a matter of seconds on your computer. It is used to run Apache and MySQL servers.
+MAMP is a free and open source software used to develop and run dynamic websites. MAMP is a one-click-solution for setting up your personal web server. MAMP installs a local server environment in a matter of seconds on your computer. It is used to run Apache and MySQL servers.
 
-        1.1 Apache server
+1.1 Apache server
 
-        1.2 MySQL server
+1.2 MySQL server
 
-        1.3 phpMyAdmin
+1.3 phpMyAdmin
 
-    2. Codecov
+2. Codecov
     
 Technology:
 
-    1. HTML
+1. HTML
 
-    2. CSS Bootstrap 3
+2. CSS Bootstrap 3
 
-    3. Javascript
+3. Javascript
 
-    4. PHP
+4. PHP
 
-    5. mySQL
+5. mySQL
 
 ## Getting Started 
 
