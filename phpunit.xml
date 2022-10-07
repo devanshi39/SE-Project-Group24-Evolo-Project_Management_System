@@ -12,8 +12,8 @@
          failOnWarning="true"
          verbose="true">
     <testsuites>
-        <testsuite name="default">
-            <directory>tests</directory>
+        <testsuite name="Project Test Suite">
+            <directory>test</directory>
         </testsuite>
     </testsuites>
 
