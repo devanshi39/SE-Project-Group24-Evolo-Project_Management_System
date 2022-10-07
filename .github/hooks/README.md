@@ -12,4 +12,4 @@
 ## What do these hooks do
 
 1. pre-commit hook block commits when a file with a non-ASCII file name is added.
-2. post-commit hook runs tests and sends a post-commit notification with the test output to the team.
+2. post-commit hook sends a post-commit notification to the team.
