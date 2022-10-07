@@ -10,6 +10,20 @@
 
 
 ## What is Evolo?
+Evolo is Dashboard based Project Management System. A complete solution for group projects in organizations that lets you track your work in any scenario. Working in a team is a cumbersome task, ease it using our project management system. Add statuses, comments, and attachments to make sure you have all the correct information to get your work done!
+Manage your team on this one platform having variety of features:
+ - Assign them tasks on this platform, with a deadline.
+ - Add or Remove team members in the middle of the project, conflict free from redundant or missing tasks.
+ - All the members will be reminded about the deadline periodically, even requests can be made to team leader for deadline extension.
+ - Team members can submit their task using this platform too.
+ - Submitted tasks can be checked and reviews can be directly conveyed to the team members using this platform.
+
+Evolo users can be divided into two types:
+ - Project administrators: 
+ Project administrators are responsible for configuring their projects. They can administer projects, change the look and feel, and make various configuration changes to the project.
+
+ - Users:
+ Users are responsible for working in specific JIRA Core projects. Users are given access to a project's issues and, depending on their permissions, work on the issue by commenting on it, transitioning it through its workflow and closing it when complete.
 
 
 ## Tools and Technology Used
