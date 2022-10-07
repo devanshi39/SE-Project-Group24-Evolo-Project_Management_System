@@ -5,17 +5,12 @@ from email.mime.text import MIMEText
 from subprocess import check_output
 import json
 import io #python 2.7
-#SERVER = "localhost"test
-
-print("In hook!")
+#SERVER = "localhost"
 
 CREDS = {}
 
 with io.open('creds.json','r',encoding='utf8') as credsFile:
     CREDS = json.load(credsFile)
-
-print("Got creds!")
-print(CREDS)
 
 user = CREDS['email']
 key = CREDS['key']
