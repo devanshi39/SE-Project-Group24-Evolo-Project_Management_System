@@ -5,7 +5,7 @@ from email.mime.text import MIMEText
 from subprocess import check_output
 import json
 import io #python 2.7
-#SERVER = "localhost"
+#SERVER = "localhost"test
 
 CREDS = {}
 
