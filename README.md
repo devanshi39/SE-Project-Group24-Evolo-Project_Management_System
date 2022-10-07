@@ -5,24 +5,28 @@
 [![GitHub stars](https://img.shields.io/github/stars/devanshi39/SE-Project-Group24-Evolo-Project_Management_System)](https://github.com/devanshi39/SE-Project-Group24-Evolo-Project_Management_System/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/devanshi39/SE-Project-Group24-Evolo-Project_Management_System)](https://github.com/devanshi39/SE-Project-Group24-Evolo-Project_Management_System/network)
 ![https://img.shields.io/github/languages/code-size/devanshi39/SE-Project-Group24-Evolo-Project_Management_System](https://img.shields.io/github/languages/code-size/devanshi39/SE-Project-Group24-Evolo-Project_Management_System)
+![GitHub language count](https://img.shields.io/github/languages/count/devanshi39/SE-Project-Group24-Evolo-Project_Management_System)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/devanshi39/SE-Project-Group24-Evolo-Project_Management_System)
+
 
 # What is Evolo?
 
+
 # Tools and Technology Used
-    Tools:
-        1. MAMP
-        MAMP is a free and open source software used to develop and run dynamic websites. MAMP is a one-click-solution for setting up your personal web server. MAMP installs a local server environment in a matter of seconds on your computer. It is used to run Apache and MySQL servers.
-            1.1 Apache server
-            1.2 MySQL server
-            1.3 phpMyAdmin
-        2. Codecov
+Tools:
+    1. MAMP
+    MAMP is a free and open source software used to develop and run dynamic websites. MAMP is a one-click-solution for setting up your personal web server. MAMP installs a local server environment in a matter of seconds on your computer. It is used to run Apache and MySQL servers.
+        1.1 Apache server
+        1.2 MySQL server
+        1.3 phpMyAdmin
+    2. Codecov
     
-    Technology:
-        1. HTML
-        2. CSS Bootstrap 3
-        3. Javascript
-        4. PHP
-        5. mySQL
+Technology:
+    1. HTML
+    2. CSS Bootstrap 3
+    3. Javascript
+    4. PHP
+    5. mySQL
 
 # Getting Started 
 
