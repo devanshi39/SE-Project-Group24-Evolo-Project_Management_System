@@ -9,30 +9,41 @@
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/devanshi39/SE-Project-Group24-Evolo-Project_Management_System)
 
 
-# What is Evolo?
+## What is Evolo?
 
 
-# Tools and Technology Used
+## Tools and Technology Used
 Tools:
+
     1. MAMP
+
     MAMP is a free and open source software used to develop and run dynamic websites. MAMP is a one-click-solution for setting up your personal web server. MAMP installs a local server environment in a matter of seconds on your computer. It is used to run Apache and MySQL servers.
+
         1.1 Apache server
+
         1.2 MySQL server
+
         1.3 phpMyAdmin
+
     2. Codecov
     
 Technology:
+
     1. HTML
+
     2. CSS Bootstrap 3
+
     3. Javascript
+
     4. PHP
+
     5. mySQL
 
-# Getting Started 
+## Getting Started 
 
-# Video Demonstration
+## Video Demonstration
 
-# Directory Structure
+## Directory Structure
     |   .github/hooks
         |   README.md
         |   post-commit
@@ -101,7 +112,7 @@ Technology:
     |   README.md
     |   phpunit.xml
 
-# Contributors
+## Contributors
 1. [Devanshi Savla](https://github.com/devanshi39)
 2. [Indranil Banerjee](https://github.com/indranil1)
 3. [Aditya Srivastava](https://github.com/adityasvat)
