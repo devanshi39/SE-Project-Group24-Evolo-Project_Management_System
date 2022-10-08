@@ -157,3 +157,20 @@ INSERT INTO `works` (`u_id`, `p_id`) VALUES
 --
 -- Indexes for dumped tables
 --
+--
+-- Indexes for table `project`
+--
+ALTER TABLE `project`
+  ADD PRIMARY KEY (`p_id`);
+
+--
+-- Indexes for table `tasks`
+--
+ALTER TABLE `tasks`
+  ADD PRIMARY KEY (`t_id`),
+  ADD KEY `u_id` (`u_id`),
+  ADD KEY `p_id` (`p_id`);
+
+--
+-- Indexes for table `user_db`
+--
