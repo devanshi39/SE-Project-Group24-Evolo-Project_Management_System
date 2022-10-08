@@ -7,7 +7,7 @@
 ![https://img.shields.io/github/languages/code-size/devanshi39/SE-Project-Group24-Evolo-Project_Management_System](https://img.shields.io/github/languages/code-size/devanshi39/SE-Project-Group24-Evolo-Project_Management_System)
 ![GitHub language count](https://img.shields.io/github/languages/count/devanshi39/SE-Project-Group24-Evolo-Project_Management_System)
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/devanshi39/SE-Project-Group24-Evolo-Project_Management_System)
-[![Discord](https://img.shields.io/discord/591914197219016707.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2)](https://discord.com/channels/1027412417661120582/1027412418231533571)
+[![Discord](https://img.shields.io/discord/591914197219016707.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2)](https://discord.gg/ahmUJXev)
 
 
 ## What is Evolo?
