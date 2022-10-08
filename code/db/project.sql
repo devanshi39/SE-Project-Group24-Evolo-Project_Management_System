@@ -109,3 +109,10 @@ CREATE TABLE `user_db` (
 --
 -- Dumping data for table `user_db`
 --
+INSERT INTO `user_db` (`u_id`, `name`, `email`, `password`, `contact`) VALUES
+(3, 'Devanshi Savla', 'devanshik.savla123@gmail.com', '00110086', 2135516943),
+(5, 'abcd', 'abcd@abcd.com', 'abcdefgh', 1234567899),
+(7, 'Shubham', 'shubham@abcd.com', 'abcdefgh', 1234567890),
+(10, 'DSM', 's@abcd.com', 'abcdefgh', 1234567890),
+(11, 'Indranil Banerjee', 'banerjeeindranil350@gmail.com', '12345678', 123456789),
+(12, 'Soha Bhatia', 'soha20bhatia@gmail.com', '12345678', 12345678);
