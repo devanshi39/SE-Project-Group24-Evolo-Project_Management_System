@@ -61,3 +61,17 @@ INSERT INTO `project` (`p_id`, `title`, `leader_id`, `startdate`, `organization`
 --
 -- Table structure for table `tasks`
 --
+CREATE TABLE `tasks` (
+  `t_id` int(11) NOT NULL,
+  `task_name` varchar(100) NOT NULL,
+  `description` text,
+  `stat` int(11) DEFAULT NULL,
+  `deadline` date DEFAULT NULL,
+  `u_id` int(11) NOT NULL,
+  `p_id` int(11) NOT NULL,
+  `work` text
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `tasks`
+--
