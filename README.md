@@ -125,3 +125,5 @@ MAMP is a free and open source software used to develop and run dynamic websites
 5. [Akruti Sinha](https://github.com/Akruti25)
 
 To find out how you can contribute to this project, read the [CONTRIBUTING.md](https://github.com/devanshi39/SE-Project-Group24-Evolo-Project_Management_System/blob/main/CONTRIBUTING.md) file
+
+The discord chat channel link is included in the file [CONTRIBUTING.md](https://github.com/devanshi39/SE-Project-Group24-Evolo-Project_Management_System/blob/main/CONTRIBUTING.md)
