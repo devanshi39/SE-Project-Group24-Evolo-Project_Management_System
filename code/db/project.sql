@@ -116,3 +116,17 @@ INSERT INTO `user_db` (`u_id`, `name`, `email`, `password`, `contact`) VALUES
 (10, 'DSM', 's@abcd.com', 'abcdefgh', 1234567890),
 (11, 'Indranil Banerjee', 'banerjeeindranil350@gmail.com', '12345678', 123456789),
 (12, 'Soha Bhatia', 'soha20bhatia@gmail.com', '12345678', 12345678);
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `works`
+--
+
+CREATE TABLE `works` (
+  `u_id` int(11) NOT NULL,
+  `p_id` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `works`
+--
