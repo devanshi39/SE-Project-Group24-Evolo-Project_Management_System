@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Banerjee"
+  given-names: "Indranil"
+- family-names: "Savla"
+  given-names: "Devanshi"
+- family-names: "Srivastava"
+  given-names: "Aditya"
+- family-names: "Bhatia"
+  given-names: "Soha"
+- family-names: "Sinha"
+  given-names: "Akruti"
+title: "SE-Project-Group24-Evolo-Project_Management_System"
+version: 1.0.0
+doi: 10.5281/zenodo.1234
+date-released: 2022-10-07
+url: "https://github.com/devanshi39/SE-Project-Group24-Evolo-Project_Management_System"
