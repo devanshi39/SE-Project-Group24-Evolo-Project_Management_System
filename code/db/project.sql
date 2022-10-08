@@ -75,3 +75,37 @@ CREATE TABLE `tasks` (
 --
 -- Dumping data for table `tasks`
 --
+INSERT INTO `tasks` (`t_id`, `task_name`, `description`, `stat`, `deadline`, `u_id`, `p_id`, `work`) VALUES
+(1, 'First', 'jmyvukyhvkuyvk', 0, NULL, 3, 6, NULL),
+(2, 'Secondwon', 'jytvkkvkv   iuyblb\r\nkyuvkubk\r\nyutvfjygjyub', 0, NULL, 7, 6, NULL),
+(3, 'Firstkhjb,', 'oiyblublb liuhbln ilunkjnkbkub jmyvukyhvkuyvk', 1, NULL, 7, 7, 'wf,jvsknv'),
+(5, 'firtone', 'jytvkkvkv   iuybk,jvs,snv,knsv,klvalskdnva.dckm.sdkmvasdilnfvsljnv,nvksdfj,nf b\r\nkyuvkubk\r\nyutvfjygjyub', 0, NULL, 3, 8, NULL),
+(6, 'second one', 'jytvkkvkvaskjnc,dnjv,aksjdc   iuybk,jvs,snv,knsv,klb\r\nkyuvkubk\r\nyutvfjygjyub', 2, NULL, 5, 8, 'krfbknaeckerbvs mvjwehrv,as'),
+(8, 'fourthone', 's,jfvbkbvs\r\nvbsdfv\r\ndrtbv\r\nrgvd\r\nrbvdrb\r\n', 0, NULL, 3, 8, NULL),
+(11, 'jhbuk', 'jhbkjh kjhbhkk', 0, '2021-02-27', 3, 7, NULL),
+(12, 'hello', 'world', 2, '2021-02-04', 5, 7, 'khbunukijkn,'),
+(13, 'jfhmgbjhgmhgvhmgv', 'kubdrthvbdrm vdjrhvbdr vdrhbmfdv\r\ndfbdlrjmbdr\r\nbdfgbdkrhvbdrv\r\nfgbdrlthbvfdkjvbdf\r\nbdflkvbhdtvhnd\r\nbkdfbhdnbvrd\r\nbvdkfjhvbdrkjtv\r\nrdtgvdkfuvbdfjvbr\'dtbdkfhvb\r\nrtsdukxnvf', 0, '2021-02-26', 10, 8, NULL),
+(14, 'kuyhvjbkb jhmb', 'kuhnj,n', 2, '2021-02-20', 5, 8, 'github.com'),
+(17, 'SE docs', 'sqasdfgbhn', 0, '2022-10-06', 12, 13, ''),
+(18, 'demo', '', 2, '2022-10-06', 5, 13, 'https://github.com/jayrajmulani/group1-se-homeworks'),
+(19, 'Docs generator', 'Generate docs files for the project code, use pdoc', 0, '2022-10-14', 12, 14, NULL),
+(20, 'Code coverage', 'Using codecov, write tests through which we can get code coverage of our project', 0, '2022-10-15', 11, 14, NULL),
+(21, 'Badges in the repo', 'Add the the required badges in the code repo', 0, '2022-10-17', 3, 14, NULL);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `user_db`
+--
+
+CREATE TABLE `user_db` (
+  `u_id` int(11) NOT NULL,
+  `name` text NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `contact` int(13) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `user_db`
+--
