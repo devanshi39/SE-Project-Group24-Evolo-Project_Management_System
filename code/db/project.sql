@@ -174,3 +174,19 @@ ALTER TABLE `tasks`
 --
 -- Indexes for table `user_db`
 --
+ALTER TABLE `user_db`
+  ADD PRIMARY KEY (`u_id`),
+  ADD UNIQUE KEY `email` (`email`);
+
+--
+-- Indexes for table `works`
+--
+ALTER TABLE `works`
+  ADD PRIMARY KEY (`u_id`,`p_id`),
+  ADD KEY `p_id` (`p_id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
