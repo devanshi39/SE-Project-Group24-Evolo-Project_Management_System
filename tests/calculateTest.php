@@ -1,6 +1,7 @@
 <?php
 
 use PHPUnit\Framework\TestCase;
+use App\calculate;
 
 class calculateTest extends TestCase {
 	public function testadd() {
