@@ -3,7 +3,7 @@
 We can add a new project on the dashboard simply by clicking on the new project button on the sidebar. 
 And filling thew new project form. We can select the title and desciption of the project and the user creating thr project is assigned leader of that project.
 
-Submitting the forn send a ```POST``` request to our Database and inserts the data into 'project' table.
+Submitting the form send a ```POST``` request to our Database and inserts the data into 'project' table.
 
 Who can create new projects?
 
