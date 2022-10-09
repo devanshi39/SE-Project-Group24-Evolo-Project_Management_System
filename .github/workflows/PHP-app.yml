@@ -21,7 +21,8 @@ jobs:
          bootstrap: vendor/autoload.php
          configuration: phpunit.xml
          php_extensions: xdebug
-         args: tests --coverage-clover ./coverage.xml
+         #args: tests --coverage-clover ./coverage.xml
+         run: php vendor/bin/phpunit --configuration phpunit.xml tests/Unit;
 
      - name: Upload to Codecov
        uses: codecov/codecov-action@v2
