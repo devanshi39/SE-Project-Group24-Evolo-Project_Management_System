@@ -2,7 +2,7 @@
 
 use PHPUnit\Framework\TestCase;
 
-class CalculatorTest extends TestCase {
+class calculateTest extends TestCase {
 	public function testadd() {
 		$this->assertEquals($this->Calculator->add(1, 2), 3);
 

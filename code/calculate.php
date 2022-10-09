@@ -1,5 +1,5 @@
 <?php
-class Calculator {
+class calculate {
 public function add($a, $b) {
 return $a + $b;
 }
