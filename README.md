@@ -8,6 +8,8 @@
 ![GitHub language count](https://img.shields.io/github/languages/count/devanshi39/SE-Project-Group24-Evolo-Project_Management_System)
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/devanshi39/SE-Project-Group24-Evolo-Project_Management_System)
 ![Discord](https://img.shields.io/discord/1027412417661120582)
+[![Code Coverage](https://codecov.io/gh/devanshi39/SE-Project-Group24-Evolo-Project_Management_System/branch/main/graphs/badge.svg)](https://codecov.io/gh/devanshi39/SE-Project-Group24-Evolo-Project_Management_System/branch/main)
+![GitHub Workflow Status](https://github.com/devanshi39/SE-Project-Group24-Evolo-Project_Management_System/actions/workflows/PHP-app.yml/badge.svg?branch=main)
 
 
 ## What is Evolo?
