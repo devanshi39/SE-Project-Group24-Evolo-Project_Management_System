@@ -1,4 +1,6 @@
 <?php
+namespace App;
+
 class calculate {
 	public function add($a, $b) {
 		return $a + $b;
