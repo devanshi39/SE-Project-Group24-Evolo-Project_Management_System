@@ -9,11 +9,11 @@
          beStrictAboutTodoAnnotatedTests="true"
          convertDeprecationsToExceptions="true"
          failOnRisky="true"
-         failOnWarning="true"
+         failOnWarning="false"
          verbose="true">
     <testsuites>
         <testsuite name="Project Test Suite">
-            <directory>test</directory>
+            <directory>tests</directory>
         </testsuite>
     </testsuites>
 
