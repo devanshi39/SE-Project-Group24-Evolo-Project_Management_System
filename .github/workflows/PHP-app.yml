@@ -1,4 +1,4 @@
-name: PHPTests
+name: build
 
 on: [push]
 
