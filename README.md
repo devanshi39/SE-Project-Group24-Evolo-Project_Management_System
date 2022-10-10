@@ -78,6 +78,10 @@ MAMP is a free and open source software used to develop and run dynamic websites
 
 You can view the descriptive project documentation [here](https://evolodocs.web.app/)
 
+## Database Schema
+
+![schema](./code/db/schema.png)
+
 ## Directory Structure
     |   .github/hooks
         |   README.md
