@@ -9,13 +9,14 @@
     }
     if(isset($_POST["submit_new_project"]))
     {
-        $stmt="Insert into project(title,leader_id,organization,startdate) values(:title,:leader,:organ,:date)";
+        $stmt="Insert into project(title,leader_id,organization,startdate,owner) values(:title,:leader,:organ,:date,:owner)";
         $stmt=$pdo->prepare($stmt);
         $stmt->execute(array(
             "title"=>$_POST["project_title"],
             "leader"=>$_SESSION["u_id"],
             "organ"=>$_POST["organization"],
-            "date"=>gmdate('Y\-m\-d')
+            "date"=>gmdate('Y\-m\-d'),
+            "owner"=>$_POST["owner"]
         ));
         $last_id=$pdo->lastInsertId();
         $stmt="Insert into works(u_id,p_id) values(".$_SESSION['u_id'].",".$last_id.")";
@@ -46,7 +47,7 @@
         $project_details["u_id"]=$_SESSION["u_id"];
         $project_details["captain"]=false;
         $project_details["avail"]=true;
-        $stmt="Select p_id,title,leader_id,startdate,organization,Description from project where p_id=:pid";
+        $stmt="Select p_id,title,leader_id,startdate,organization,Description, owner from project where p_id=:pid";
         $stmt=$pdo->prepare($stmt);
         $stmt->execute(array("pid"=>$_GET["projectid"]));
         $row=$stmt->fetchALL(PDO::FETCH_ASSOC);
@@ -59,6 +60,7 @@
             $project_details["startdate"]=$row[$i]["startdate"];
             $project_details["organization"]=$row[$i]["organization"];
             $project_details["Description"]=$row[$i]["Description"];
+            $project_details["owner"]=$row[$i]["owner"];
         }
         if($project_details["leader_id"]==$_SESSION["u_id"])
             $project_details["captain"]=true;
@@ -162,6 +164,10 @@
                     <div class="form-group">
                     <label>Organization</label>
                     <input type="text" name="organization" class="form-control">
+                    </div>
+                    <div class="form-group">
+                    <label>Owner</label>
+                    <input type="text" name="owner" class="form-control">
                     </div>
 
                     <button type="submit" class="btn btn-primary form-btn" name="submit_new_project">Submit</button> 
@@ -346,7 +352,7 @@
             members=<?=json_encode($works)?>;
             txt="";
             txt+="<div class='dash_header'><h2 class='project_name'>"+project_det["title"]+"</h2>";
-            txt+="<h5 class='project_organization'> - "+project_det["organization"]+"</h5></div>";
+            txt+="<h5 class='project_organization'> - "+project_det["organization"]+ " - " + project_det["owner"] + "</h5></div>";
             if(project_det["captain"]===true)
             {
                 txt+="<button class='dash_button button_left' onclick='return show_new_member();'>Add New Member</button>";
