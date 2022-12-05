@@ -9,7 +9,7 @@
     }
     if(isset($_POST["submit_task_form"]))
     {
-        $stmt="Insert into tasks(task_name,description,stat,deadline,u_id,p_id) values(:t,:d,:s,:de,:u,:p)";
+        $stmt="Insert into tasks(task_name,description,stat,deadline,u_id,p_id, bug) values(:t,:d,:s,:de,:u,:p,:ty)";
         $stmt=$pdo->prepare($stmt);
         $stmt->execute(array(
             "t"=>$_POST["title"],
@@ -17,7 +17,8 @@
             "s"=>0,
             "de"=>$_POST["deadline"],
             "u"=>$_POST["uid"],
-            "p"=>$_POST["project_id"]
+            "p"=>$_POST["project_id"],
+            "ty"=>$_POST["bug"]
         ));
         header("Location: dashboard.php?projectid=".$_POST["project_id"]);
         return;

@@ -39,6 +39,7 @@
     $project_details=array();
     $works=array();
     $members=array();
+    $types=array('bug', 'feature', 'enhancement');
     $project_details["avail"]=false;
     if(isset($_GET["projectid"]))
     {
@@ -61,7 +62,7 @@
         }
         if($project_details["leader_id"]==$_SESSION["u_id"])
             $project_details["captain"]=true;
-        $stmt="Select work.u_id as u_id,name,t_id,task_name,description,stat,deadline,work FROM (SELECT works.u_id as u_id,name,p_id FROM works JOIN user_db on works.u_id=user_db.u_id where p_id=:project) as work LEFT OUTER JOIN tasks ON work.u_id=tasks.u_id and work.p_id=tasks.p_id ORDER BY work.u_id";
+        $stmt="Select work.u_id as u_id,name,t_id,task_name,description,stat,deadline,work, bug FROM (SELECT works.u_id as u_id,name,p_id FROM works JOIN user_db on works.u_id=user_db.u_id where p_id=:project) as work LEFT OUTER JOIN tasks ON work.u_id=tasks.u_id and work.p_id=tasks.p_id ORDER BY work.u_id";
         #$stmt="Select works.u_id as u_id,name FROM works JOIN user_db ON works.u_id=user_db.u_id where works.p_id=:project";
         $stmt=$pdo->prepare($stmt);
         $stmt->execute(array("project"=>$project_details["p_id"]));
@@ -76,6 +77,7 @@
             $works[$i]["task"]=$row[$i]["task_name"];
             $works[$i]["description"]=$row[$i]["description"];
             $works[$i]["status"]=$row[$i]["stat"];
+            $works[$i]["bug"]=$row[$i]["bug"];
             $works[$i]["deadline"]=$row[$i]["deadline"];
             $works[$i]["work"]=$row[$i]["work"];
             $members[$row[$i]["u_id"]]=$row[$i]["name"];
@@ -208,6 +210,16 @@
                     <div class="form-group">
                     <label>Description:</label>
                     <textarea name="description" class="form-control"></textarea>
+                    </div>
+                    <div class="form-group">
+                    <label>Type:</label>
+                    <select name="bug" class="form-control">
+                        <option value="select">Select</option>
+                        <?php
+                                foreach($types as $i=>$n)
+                                    echo "<option value=".$i.">".$n."</option>";
+                        ?>
+                    </select>
                     </div>
                     <div class="form-group">
                     <label>Deadline:</label>
@@ -347,6 +359,7 @@
                         <th>Task</th>
                         <th>Description</th>
                         <th>Status</th>
+                        <th>Type</th>
                         <th>Deadline</th>
                         <th>Work</th>`;
                 txt+='<th>Verify</th>';
@@ -385,6 +398,15 @@
                     txt+="<td class='in_verification'>Submitted</td>";
                 else if(members[x]["status"]==2)
                     txt+="<td class='verified'>Done!</td>";
+                else
+                    txt+="<td>-</td>";
+
+                if(members[x]["bug"]==0)
+                    txt+="<td class='to_do'>Bug</td>";
+                else if(members[x]["bug"]==1)
+                    txt+="<td class='in_verification'>Feature</td>";
+                else if(members[x]["bug"]==2)
+                    txt+="<td class='verified'>Enhancement</td>";
                 else
                     txt+="<td>-</td>";
 
