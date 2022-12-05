@@ -1,163 +1,128 @@
-# Contributing Guidelines
+# Contributor Covenant Code of Conduct
 
-First of all, thanks for thinking to contribute to our project❤️🎉
+## Our Pledge
 
-Below mentioned are the guidelines for contributing to the CSC 510 SE-Project-2-Evolvo-Project_Management_System and packages, which are hosted on our [Project Page](https://github.com/MitanshuShaBa/SE-Project-Group6-Evolo-Project_Management_System).
-Please ensure that these guidelines are followed and any new ideas are encouraged, feel free to propose changes in the form of a pull request.
+We as members, contributors, and leaders pledge to make participation in our
+community a harassment-free experience for everyone, regardless of age, body
+size, visible or invisible disability, ethnicity, sex characteristics, gender
+identity and expression, level of experience, education, socio-economic status,
+nationality, personal appearance, race, religion, or sexual identity
+and orientation.
 
-#### Table Of Contents
+We pledge to act and interact in ways that contribute to an open, welcoming,
+diverse, inclusive, and healthy community.
 
-[Code of Conduct](#code-of-conduct)
+## Our Standards
 
-[Doubts Related to Github](#doubts-related-to-github)
+Examples of behavior that contributes to a positive environment for our
+community include:
 
-[I want to contribute to the project](#I-want-to-contribute-to-the-project)
+- Demonstrating empathy and kindness toward other people
+- Being respectful of differing opinions, viewpoints, and experiences
+- Giving and gracefully accepting constructive feedback
+- Accepting responsibility and apologizing to those affected by our mistakes,
+  and learning from the experience
+- Focusing on what is best not just for us as individuals, but for the
+  overall community
 
-- [Reporting bugs](#reporting-bugs)
-- [Suggesting Significant Enhancements](#suggesting-significant-enhancements)
-- [Your First Code Contribution](#your-first-code-contribution)
-- [Pull Requests](#pull-requests)
-- [Improvent in Documentation](#improving-documentation)
+Examples of unacceptable behavior include:
 
-[Styleguides](#styleguides)
+- The use of sexualized language or imagery, and sexual attention or
+  advances of any kind
+- Trolling, insulting or derogatory comments, and personal or political attacks
+- Public or private harassment
+- Publishing others' private information, such as a physical or email
+  address, without their explicit permission
+- Other conduct which could reasonably be considered inappropriate in a
+  professional setting
 
-- [Git Commit Messages](#git-commit-messages)
-- [Future Scope](#future-scope)
-- [Project Team](#project-team)
-- [Attribution](#attribution)
+## Enforcement Responsibilities
 
-## Code of Conduct
+Community leaders are responsible for clarifying and enforcing our standards of
+acceptable behavior and will take appropriate and fair corrective action in
+response to any behavior that they deem inappropriate, threatening, offensive,
+or harmful.
 
-This project and everyone particpating in it is governed by [Code of Conduct](<(https://github.com/MitanshuShaBa/SE-Project-Group6-Evolo-Project_Management_System/blob/main/CODE_OF_CONDUCT.md)>).
-Everyone contributing to this project should uphold this and any inappropriate behaviour should be reported to plal@ncsu.edu.
+Community leaders have the right and responsibility to remove, edit, or reject
+comments, commits, code, wiki edits, issues, and other contributions that are
+not aligned to this Code of Conduct, and will communicate reasons for moderation
+decisions when appropriate.
 
-## Doubts Related to Github
+## Scope
 
-Is it your first time contributing to a project? Don't worry as beginners we tend to get stressed about how things work, but guess what github has in
-depth documentation about everything you need to know, will be providing some useful links below.
+This Code of Conduct applies within all community spaces, and also applies when
+an individual is officially representing the community in public spaces.
+Examples of representing our community include using an official e-mail address,
+posting via an official social media account, or acting as an appointed
+representative at an online or offline event.
 
-[Guidelines for Contributors](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/setting-guidelines-for-repository-contributors)
+## Enforcement
 
-[Encouraging Contributors](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/encouraging-helpful-contributions-to-your-project-with-labels)
+Instances of abusive, harassing, or otherwise unacceptable behavior may be
+reported to the community leaders responsible for enforcement at
+plal@ncsu.edu.
+All complaints will be reviewed and investigated promptly and fairly.
 
-## I want to contribute to the project
+All community leaders are obligated to respect the privacy and security of the
+reporter of any incident.
 
-Before you decide to contribute to our project, you should have knowledge about bugs reports, suggesting enhancements, pull requests and documentation.
+## Enforcement Guidelines
 
-### Reporting bugs
+Community leaders will follow these Community Impact Guidelines in determining
+the consequences for any action they deem in violation of this Code of Conduct:
 
-This section will guide you regarding how to submit a bug report, details about how to submit a good bug report and
-things you need to check before submitting a report. Follow these guidelines to help the community understand your work💻 and contribute efficiently. Before
-creating the report, please check [this list](#before-submitting-a-bug-report) as you might find out that you don't need to create one. Still if you want to submit
-a bug report please include complete details about your environment, tools, packages, OS and different things which might be used to identify and resolve the issue.
+### 1. Correction
 
-> **Note:** If you find a **Closed** issue that seems like it is the same thing that you're experiencing, open a new issue and include a link to the original issue in the body of your new one.
+**Community Impact**: Use of inappropriate language or other behavior deemed
+unprofessional or unwelcome in the community.
 
-#### Before Submitting A Bug Report
+**Consequence**: A private, written warning from community leaders, providing
+clarity around the nature of the violation and an explanation of why the
+behavior was inappropriate. A public apology may be requested.
 
-Before submitting, please ensure that your report contains all the required information , so that other sources are not required.
-Make sure you are using all the latest version software and the issue is not coming only on your local machine. Check if some other users also have faced a similar
-issue and is a resolution for it is available on the internet.
+### 2. Warning
 
-#### How Do I Submit A (Good) Bug Report?
+**Community Impact**: A violation through a single incident or series
+of actions.
 
-[Github issues](https://docs.github.com/en/issues/tracking-your-work-with-issues/about-issues) helps in tracking the bugs and errors. Below mentioned are some
-of the things which makes a (Good) bug report.
+**Consequence**: A warning with consequences for continued behavior. No
+interaction with the people involved, including unsolicited interaction with
+those enforcing the Code of Conduct, for a specified period of time. This
+includes avoiding interactions in community spaces as well as external channels
+like social media. Violating these terms may lead to a temporary or
+permanent ban.
 
-- Explain the problem in detail so it is easy to identify the issue.
-- Describe how did you identify this issue and necessary steps to do so.
-- Include all the related screenshots, gifs, videos or anything that is required to demonstrate the issue.
-- Explain what is the actual behaviour and expected behaviour according to you.
-- Ensure that you check everything twice before submitting the bug report(like OS, latest version, local machine issues etc).
-- After a report is submitted a team member will review it and follow necessary steps to identify and resolve the issue.
+### 3. Temporary Ban
 
-### Suggesting Significant Enhancements
+**Community Impact**: A serious violation of community standards, including
+sustained inappropriate behavior.
 
-This section will guide you regarding how to submit some minor or major enhancements for our CSC 510 SE-Project-2-Evolvo-Project_Management_System. Follow these guidelines so that
-everyone could understand your work💻 and help in contributing more efficiently.
+**Consequence**: A temporary ban from any sort of interaction or public
+communication with the community for a specified period of time. No public or
+private interaction with the people involved, including unsolicited interaction
+with those enforcing the Code of Conduct, is allowed during this period.
+Violating these terms may lead to a permanent ban.
 
-#### Before Suggesting an Enhancement
+### 4. Permanent Ban
 
-- Check if there is already an package available(regarding to the enhancment you are suggesting).
-- Explain the steps for enhancing the project, along with the repository you want to enhance in.
+**Community Impact**: Demonstrating a pattern of violation of community
+standards, including sustained inappropriate behavior, harassment of an
+individual, or aggression toward or disparagement of classes of individuals.
 
-#### How Do I Submit A (Good) Enhancement Suggestion?
+**Consequence**: A permanent ban from any sort of public interaction within
+the community.
 
-[Github issues](https://docs.github.com/en/issues/tracking-your-work-with-issues/about-issues) helps in tracking the enhancement suggestions. Below mentioned are
-some of things you should keep in mind to submit a (Good) enhancement suggestion.
+## Attribution
 
-- Explain clearly about the issue and required enhancement.
-- Describe what you feel is the actual and expected behaviour for the project.
-- Include all the related screenshots, gifs and code snippets, so that it helps everyone to understand about the issue.
-- Describe what are your system specifications and why this enhancement will be useful for every other user.
+This Code of Conduct is adapted from the [Contributor Covenant][homepage],
+version 2.0, available at
+https://www.contributor-covenant.org/version/2/0/code_of_conduct.html.
 
-### Your First Code Contribution
+Community Impact Guidelines were inspired by [Mozilla's code of conduct
+enforcement ladder](https://github.com/mozilla/diversity).
 
-Don't know about how to start contributing to CSC 510 SE-Project-2-Evolvo-Project_Management_System, you can look at begineer and help-wanted issues.
+[homepage]: https://www.contributor-covenant.org
 
-[Begineer issues](https://github.com/search?utf8=✓&q=is%3Aopen+is%3Aissue+label%3Abeginner+label%3Ahelp-wanted+user%3Aatom+sort%3Acomments-desc) - issues which
-are just basic and require only few lines of code or minimal test cases.
-
-[Help Wanted Issues](https://github.com/search?q=is%3Aopen+is%3Aissue+label%3Ahelp-wanted+user%3Aatom+sort%3Acomments-desc+-label%3Abeginner) - issues which are
-a bit more complex and many people actually face them.
-
-The above issues mentioned are sorted according to the number of comments, though the number of comments may not be the best parameter still as the number of comment
-increases we know that most of the people have faced similar issue, so it is a recurring issue.
-It will also demonstrate what impact the given change will have.
-
-### Pull Requests
-
-This section will guide you regarding how you can send the pull requests and what the necessary things you need to follow.
-
-- Project quality should be maintained.
-- Fix an issue which is global and not only coming in your local machine.
-- Don't suggest unnecessary changes which might not be useful to other users.
-- Maintain proper guidelines and ensure to follow necessary steps so everyone can understand and contribute to your work.
-- Try engaging the community with you contentful insights.
-- After you submit the pull request, check if all your status checks are passing, if they are failing please leave a comment on how you think the failure is unrelated.
-- Last but not the least, follow the [styleguides](#styleguides).
-
-### Improving Documentation
-
-We would love to have suggestions regarding improving our documentation, if you feel anything is missing please feel free to reach out and suggest
-the changes.
-
-## Styleguides
-
-### Git Commit Messages
-
-- Use proper commit messages so that everyone understands properly.
-- Address the issues and pull requests after first line.
-- When you are only changing the documentation, include `[ci skip]` in the commit title.
-- Use present tense in your commit messages.
-- Consider starting your commit message with different emojis(for various things):
-  - 📄 `:document:` when improving documentation
-  - 💻 `:laptop:` when improving the code structure
-  - 🍎 `:apple:` when fixing something in macOS
-  - 🐧 `:penguin:` when fixing something in linux
-  - 🪟 `:window:` when fixing something in windows
-  - 🚨 `:Red alert!:` when there any security issue
-  - ⬆️ `:up_arrow:` when upgrading dependencies
-  - ⬇️ `:down_arrow:` when downgrading dependencies
-  - ☑️ `:tickmark:` when adding tests
-  - 🪲 `:Bug:` when reporting or submitting a bug
-  - 📝 `:Memo:` when writing documents
-
-### Future Scope
-
-If you want to contribute and make an significant enhancement based on our project, you are free to do so. Always there are various possibilities available and it would make us very happy if any new research or idea is developed using our project.
-
-### Project team
-
-The following are the team members who contributed and made this project.
-
-- Kaksha Mhatre(kpmhatre@ncsu.edu)
-- Praneya Lal(plal@ncsu.edu)
-- Mitanshu Reshamwala(mresham@ncsu.edu)
-- Janvi Jitendra Phadtare(jphadta@ncsu.edu)
-- Mitul Bipinbhai Patel(mpatel27@ncsu.edu)
-
-### Attribution
-
-The contribution file is based on atom(repository). Please check it out as it gives in-depth explanation of everything you need to include in your github
-repository, if you have read till this point congrats you have a lot of patience, happy coding❤️
+For answers to common questions about this code of conduct, see the FAQ at
+https://www.contributor-covenant.org/faq. Translations are available at
+https://www.contributor-covenant.org/translations.
