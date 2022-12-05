@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Dec 05, 2022 at 02:03 AM
+-- Generation Time: Dec 05, 2022 at 02:13 AM
 -- Server version: 5.7.24
 -- PHP Version: 8.0.1
 
@@ -33,29 +33,36 @@ CREATE TABLE `project` (
   `leader_id` int(11) NOT NULL,
   `startdate` date DEFAULT NULL,
   `organization` varchar(255) DEFAULT NULL,
-  `Description` text
+  `Description` text,
+  `owner` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `project`
 --
 
-INSERT INTO `project` (`p_id`, `title`, `leader_id`, `startdate`, `organization`, `Description`) VALUES
-(1, 'project1', 0, NULL, NULL, NULL),
-(2, 'project2', 0, NULL, NULL, NULL),
-(3, 'project3', 0, NULL, NULL, NULL),
-(4, 'demo', 5, '2021-01-23', 'demo2', NULL),
-(5, 'demo', 5, '2021-01-23', 'demo2', NULL),
-(6, 'demo', 5, '2021-01-23', 'demo2', NULL),
-(7, 'jhfjjtj', 5, '2021-01-23', 'ykitgvk', NULL),
-(8, 'DAAA', 5, '2021-01-24', 'muj', NULL),
-(9, 'jgvcjgqwvb', 5, '2021-01-31', 'jgvjv', NULL),
-(10, 'new project', 5, '2021-02-04', 'muj', NULL),
-(11, 'Chatbot', 5, '2022-10-05', 'NCSU', NULL),
-(12, 'Driverless', 11, '2022-10-05', 'NCSU', NULL),
-(13, 'SE', 5, '2022-10-06', 'NCSU', NULL),
-(14, 'SE-Project-Group24', 3, '2022-10-08', 'NCSU CSC', NULL),
-(15, 'SE', 10, '2022-12-04', 'NCSU', NULL);
+INSERT INTO `project` (`p_id`, `title`, `leader_id`, `startdate`, `organization`, `Description`, `owner`) VALUES
+(1, 'project1', 0, NULL, NULL, NULL, NULL),
+(2, 'project2', 0, NULL, NULL, NULL, NULL),
+(3, 'project3', 0, NULL, NULL, NULL, NULL),
+(4, 'demo', 5, '2021-01-23', 'demo2', NULL, NULL),
+(5, 'demo', 5, '2021-01-23', 'demo2', NULL, NULL),
+(6, 'demo', 5, '2021-01-23', 'demo2', NULL, NULL),
+(7, 'jhfjjtj', 5, '2021-01-23', 'ykitgvk', NULL, NULL),
+(8, 'DAAA', 5, '2021-01-24', 'muj', NULL, NULL),
+(9, 'jgvcjgqwvb', 5, '2021-01-31', 'jgvjv', NULL, NULL),
+(10, 'new project', 5, '2021-02-04', 'muj', NULL, NULL),
+(11, 'Chatbot', 5, '2022-10-05', 'NCSU', NULL, NULL),
+(12, 'Driverless', 11, '2022-10-05', 'NCSU', NULL, NULL),
+(13, 'SE', 5, '2022-10-06', 'NCSU', NULL, NULL),
+(14, 'SE-Project-Group24', 3, '2022-10-08', 'NCSU CSC', NULL, NULL),
+(15, 'Abc', 5, '2022-12-04', 'xyz', NULL, NULL),
+(16, 'ABCD - project 1', 5, '2022-12-05', 'GE', NULL, NULL),
+(17, 'ddd', 13, '2022-12-05', 'dedewd', NULL, NULL),
+(18, 'Abc', 5, '2022-12-05', 'rferferg', NULL, 'abcd'),
+(19, '', 5, '2022-12-05', '', NULL, 'abcd'),
+(20, 'X', 5, '2022-12-05', 'Y', NULL, 'abcd'),
+(21, 'X', 5, '2022-12-05', 'Y', NULL, 'abcd');
 
 -- --------------------------------------------------------
 
@@ -102,6 +109,7 @@ INSERT INTO `tasks` (`t_id`, `task_name`, `description`, `stat`, `deadline`, `u_
 (26, 'Some ', '', 0, '2022-12-23', 10, 15, NULL, 1),
 (27, '', '', 0, '2023-01-06', 10, 15, NULL, 0);
 
+
 -- --------------------------------------------------------
 
 --
@@ -126,7 +134,8 @@ INSERT INTO `user_db` (`u_id`, `name`, `email`, `password`, `contact`) VALUES
 (7, 'Shubham', 'shubham@abcd.com', 'abcdefgh', 1234567890),
 (10, 'DSM', 's@abcd.com', 'abcdefgh', 1234567890),
 (11, 'Indranil Banerjee', 'banerjeeindranil350@gmail.com', '12345678', 123456789),
-(12, 'Soha Bhatia', 'soha20bhatia@gmail.com', '12345678', 12345678);
+(12, 'Soha Bhatia', 'soha20bhatia@gmail.com', '12345678', 12345678),
+(13, '', '', '', 0);
 
 -- --------------------------------------------------------
 
@@ -154,19 +163,27 @@ INSERT INTO `works` (`u_id`, `p_id`) VALUES
 (3, 8),
 (5, 8),
 (7, 8),
+(3, 9),
 (5, 9),
 (7, 9),
 (10, 9),
 (5, 10),
 (7, 10),
 (5, 11),
+(7, 11),
 (11, 12),
 (5, 13),
 (12, 13),
 (3, 14),
 (11, 14),
 (12, 14),
-(10, 15);
+(5, 15),
+(5, 16),
+(13, 17),
+(5, 18),
+(5, 19),
+(5, 20),
+(5, 21);
 
 --
 -- Indexes for dumped tables
@@ -208,19 +225,19 @@ ALTER TABLE `works`
 -- AUTO_INCREMENT for table `project`
 --
 ALTER TABLE `project`
-  MODIFY `p_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `p_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 
 --
 -- AUTO_INCREMENT for table `tasks`
 --
 ALTER TABLE `tasks`
-  MODIFY `t_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
+  MODIFY `t_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
 
 --
 -- AUTO_INCREMENT for table `user_db`
 --
 ALTER TABLE `user_db`
-  MODIFY `u_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `u_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- Constraints for dumped tables
