@@ -9,6 +9,7 @@ if(isset($_POST["cancel"])){
 $name = trim($_POST['name']);    
 $email = trim($_POST['email']);
 $pass = $_POST['password'];
+$pass = hash('sha256',$pass);
 $contact = trim($_POST['contact']);
 if($contact=="")
 {
