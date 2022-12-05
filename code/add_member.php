@@ -1,5 +1,5 @@
 <?php
-    //session_start();
+    session_start();
     require_once "pdo.php";
     if(!isset($_SESSION["name"]))
     {

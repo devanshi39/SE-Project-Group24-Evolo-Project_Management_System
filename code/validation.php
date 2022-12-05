@@ -8,7 +8,7 @@ if(isset($_POST["cancel"])){
     
 $email = trim($_POST['email']);
 $pass = $_POST['password']; 
-
+$pass = hash('sha256',$pass);
 $stmt = "select * from user_db where email =:email";
 $stmt=$pdo->prepare($stmt);
 $stmt->execute(array("email"=>$email));

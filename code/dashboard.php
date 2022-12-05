@@ -9,13 +9,14 @@
     }
     if(isset($_POST["submit_new_project"]))
     {
-        $stmt="Insert into project(title,leader_id,organization,startdate) values(:title,:leader,:organ,:date)";
+        $stmt="Insert into project(title,leader_id,organization,startdate,owner) values(:title,:leader,:organ,:date,:owner)";
         $stmt=$pdo->prepare($stmt);
         $stmt->execute(array(
             "title"=>$_POST["project_title"],
             "leader"=>$_SESSION["u_id"],
             "organ"=>$_POST["organization"],
-            "date"=>gmdate('Y\-m\-d')
+            "date"=>gmdate('Y\-m\-d'),
+            "owner"=>$_POST["owner"]
         ));
         $last_id=$pdo->lastInsertId();
         $stmt="Insert into works(u_id,p_id) values(".$_SESSION['u_id'].",".$last_id.")";
@@ -39,13 +40,14 @@
     $project_details=array();
     $works=array();
     $members=array();
+    $types=array('bug', 'feature', 'enhancement');
     $project_details["avail"]=false;
     if(isset($_GET["projectid"]))
     {
         $project_details["u_id"]=$_SESSION["u_id"];
         $project_details["captain"]=false;
         $project_details["avail"]=true;
-        $stmt="Select p_id,title,leader_id,startdate,organization,Description from project where p_id=:pid";
+        $stmt="Select p_id,title,leader_id,startdate,organization,Description, owner from project where p_id=:pid";
         $stmt=$pdo->prepare($stmt);
         $stmt->execute(array("pid"=>$_GET["projectid"]));
         $row=$stmt->fetchALL(PDO::FETCH_ASSOC);
@@ -58,10 +60,11 @@
             $project_details["startdate"]=$row[$i]["startdate"];
             $project_details["organization"]=$row[$i]["organization"];
             $project_details["Description"]=$row[$i]["Description"];
+            $project_details["owner"]=$row[$i]["owner"];
         }
         if($project_details["leader_id"]==$_SESSION["u_id"])
             $project_details["captain"]=true;
-        $stmt="Select work.u_id as u_id,name,t_id,task_name,description,stat,deadline,work FROM (SELECT works.u_id as u_id,name,p_id FROM works JOIN user_db on works.u_id=user_db.u_id where p_id=:project) as work LEFT OUTER JOIN tasks ON work.u_id=tasks.u_id and work.p_id=tasks.p_id ORDER BY work.u_id";
+        $stmt="Select work.u_id as u_id,name,t_id,task_name,description,stat,deadline,work, bug FROM (SELECT works.u_id as u_id,name,p_id FROM works JOIN user_db on works.u_id=user_db.u_id where p_id=:project) as work LEFT OUTER JOIN tasks ON work.u_id=tasks.u_id and work.p_id=tasks.p_id ORDER BY work.u_id";
         #$stmt="Select works.u_id as u_id,name FROM works JOIN user_db ON works.u_id=user_db.u_id where works.p_id=:project";
         $stmt=$pdo->prepare($stmt);
         $stmt->execute(array("project"=>$project_details["p_id"]));
@@ -76,6 +79,7 @@
             $works[$i]["task"]=$row[$i]["task_name"];
             $works[$i]["description"]=$row[$i]["description"];
             $works[$i]["status"]=$row[$i]["stat"];
+            $works[$i]["bug"]=$row[$i]["bug"];
             $works[$i]["deadline"]=$row[$i]["deadline"];
             $works[$i]["work"]=$row[$i]["work"];
             $members[$row[$i]["u_id"]]=$row[$i]["name"];
@@ -161,6 +165,10 @@
                     <label>Organization</label>
                     <input type="text" name="organization" class="form-control">
                     </div>
+                    <div class="form-group">
+                    <label>Owner</label>
+                    <input type="text" name="owner" class="form-control">
+                    </div>
 
                     <button type="submit" class="btn btn-primary form-btn" name="submit_new_project">Submit</button> 
                 </form>
@@ -208,6 +216,16 @@
                     <div class="form-group">
                     <label>Description:</label>
                     <textarea name="description" class="form-control"></textarea>
+                    </div>
+                    <div class="form-group">
+                    <label>Type:</label>
+                    <select name="bug" class="form-control">
+                        <option value="select">Select</option>
+                        <?php
+                                foreach($types as $i=>$n)
+                                    echo "<option value=".$i.">".$n."</option>";
+                        ?>
+                    </select>
                     </div>
                     <div class="form-group">
                     <label>Deadline:</label>
@@ -334,7 +352,7 @@
             members=<?=json_encode($works)?>;
             txt="";
             txt+="<div class='dash_header'><h2 class='project_name'>"+project_det["title"]+"</h2>";
-            txt+="<h5 class='project_organization'> - "+project_det["organization"]+"</h5></div>";
+            txt+="<h5 class='project_organization'> - "+project_det["organization"]+ " - " + project_det["owner"] + "</h5></div>";
             if(project_det["captain"]===true)
             {
                 txt+="<button class='dash_button button_left' onclick='return show_new_member();'>Add New Member</button>";
@@ -347,6 +365,7 @@
                         <th>Task</th>
                         <th>Description</th>
                         <th>Status</th>
+                        <th>Type</th>
                         <th>Deadline</th>
                         <th>Work</th>`;
                 txt+='<th>Verify</th>';
@@ -385,6 +404,15 @@
                     txt+="<td class='in_verification'>Submitted</td>";
                 else if(members[x]["status"]==2)
                     txt+="<td class='verified'>Done!</td>";
+                else
+                    txt+="<td>-</td>";
+
+                if(members[x]["bug"]==0)
+                    txt+="<td class='to_do'>Bug</td>";
+                else if(members[x]["bug"]==1)
+                    txt+="<td class='in_verification'>Feature</td>";
+                else if(members[x]["bug"]==2)
+                    txt+="<td class='verified'>Enhancement</td>";
                 else
                     txt+="<td>-</td>";
 
