@@ -11,7 +11,7 @@
     
     <!-- Styles -->
     <link href="css/bootstrap.css" rel="stylesheet">
-	<link href="css/styles.css?x=8" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
 	
 	<!-- Favicon  -->
     <link rel="icon" href="images/favicon.png">
@@ -57,22 +57,22 @@
                             
                                 <div class="form-group">
                                 <label>Name</label>
-                                <input type="text" name="name" class="form-control">
+                                <input type="text" required name="name" class="form-control">
                                 </div>
                             
                                 <div class="form-group">
                                 <label>Email-id</label>
-                                <input type="text" name="email" class="form-control">
+                                <input type="email" required name="email" class="form-control">
                                 </div>
                             
                                 <div class="form-group">
                                 <label>Password</label>
-                                <input type="password" name="password" class="form-control">
+                                <input type="password" required name="password" class="form-control">
                                 </div>
                         
                                 <div class="form-group">
                                 <label>Contact number</label>
-                                <input type="tel" name="contact" class="form-control">
+                                <input type="tel" required name="contact" class="form-control">
                                 </div>
                             
                             <button type="submit" class="btn btn-primary form-btn">Register</button> 
