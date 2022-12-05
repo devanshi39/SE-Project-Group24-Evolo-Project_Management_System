@@ -21,6 +21,12 @@ Manage your team on this one platform having variety of features:
  - Team members can submit their task using this platform too.
  - Submitted tasks can be checked and reviews can be directly conveyed to the team members using this platform.
 
+### New additions:
+- Mark if a task is a feature, bug or an enhancement
+- Project owner name displayed at the task
+- Priority added to each task
+- Password encryption for greater security
+
 Evolo users can be divided into two types:
  - Project administrators: 
  Project administrators are responsible for configuring their projects. They can administer projects, change the look and feel, and make various configuration changes to the project.
