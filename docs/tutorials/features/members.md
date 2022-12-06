@@ -1,8 +1,6 @@
 # Add a new Member to a project
 
-Multiple members can be added to a particular project. The leader of a project can add members to it by specifying there email ids. The email of the user needs to be an already existing one that is the user should have an account with evolo.
-
-A POST request to our Database add inserts the user id and the project id assocaited with it to the works table.
+Multiple members can be added to a particular project. The leader of a project can add members to it by specifying their email ids. The email of the user needs to be an already existing one that is the user should have an account with Evolo.
 
 ```jsx
 const AddMember = ({ organisation, project, handleOrgRefresh }) => {
