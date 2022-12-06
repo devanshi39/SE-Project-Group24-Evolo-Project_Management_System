@@ -70,7 +70,7 @@ Run `npm start` inside the frontend folder and the Website will running on http:
 
 ## Video Demonstration
 
-[video](https://drive.google.com/file/d/1dfMtorkpeEnCJV63pSgBAUUdwCOyUgoS/view?usp=sharing)
+[video](https://drive.google.com/drive/folders/1B9Mc8v5-EMRugUcSJIQM4FEejzFWWXSa?usp=sharing)
 
 ## Project Documentation
 
