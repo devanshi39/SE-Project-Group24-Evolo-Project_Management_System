@@ -1,18 +1,25 @@
 cff-version: 1.2.0
-message: "If you use this software, please cite it as below."
+message: CSC 510 SE-Project-Group6-Evolo-Project_Management_System
 authors:
-- family-names: "Banerjee"
-  given-names: "Indranil"
-- family-names: "Savla"
-  given-names: "Devanshi"
-- family-names: "Srivastava"
-  given-names: "Aditya"
-- family-names: "Bhatia"
-  given-names: "Soha"
-- family-names: "Sinha"
-  given-names: "Akruti"
-title: "SE-Project-Group24-Evolo-Project_Management_System"
-version: 1.0.0
-doi: 10.5281/zenodo.1234
+  - family-names: Kaksha
+    given-names: Mhatre
+    email: kpmhatre@ncsu.edu
+  - family-names: Praneya
+    given-names: Lal
+    email: plal@ncsu.edu
+  - family-names: Mitanshu
+    given-names: Reshamwala
+    email: mresham@ncsu.edu
+  - family-names: Janvi
+    given-names: Phadtare
+    email: jphadta@ncsu.edu
+  - family-names: Mitul
+    given-names: Patel
+    email: mpatel27@ncsu.edu
+identifiers:
+  - type: url
+    value: "https://doi.org/10.5281/zenodo.7155361"
+title: "CSC 510 SE-Project-2-Evolvo-Project_Management_System 
+version: v3.1.3
 date-released: 2022-10-07
-url: "https://github.com/devanshi39/SE-Project-Group24-Evolo-Project_Management_System"
+url: "https://github.com/MitanshuShaBa/SE-Project-Group6-Evolo-Project_Management_System"
