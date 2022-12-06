@@ -78,7 +78,7 @@ You can view the descriptive project documentation [here](https://mitanshushaba.
 
 ## Database Schema
 
-![schema](./code/db/schema.png)
+![schema](./code/frontend/src/images/schema.JPG)
 
 ## Contributors
 
